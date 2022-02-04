@@ -1,4 +1,7 @@
+
+from unicodedata import name
 import numpy as np
+
 
 def random_predict(number:int=1) -> int:
     """Рандомно угадываем число
@@ -44,4 +47,5 @@ def score_game(random_predict) -> int:
     return(score)
 
 # RUN
-score_game(random_predict)
+if name == "mine":
+    score_game(random_predict)
